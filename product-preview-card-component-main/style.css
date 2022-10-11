@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+body{
+    background:  hsl(30, 38%, 92%);
+   margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 0.1px);
+}
+    
+
+.container{
+    max-width: 600px;
+}
+.content-container{
+    color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        font-weight: 500;
+        font-family:"Montserrat", sans-serif; 
+       background-color:hsl(0, 0%, 100%);
+     margin-top: -0.3rem;
+     border-radius: 0 0 15px 15px;
+     padding-left: 40px;
+    
+}
+small{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 8px;
+    font-family: "Montserrat", sans-serif;
+   padding-top: 1rem;
+}
+h1{
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 35px;
+    font-family: "Fraunces", sans-serif;
+    font-style: italic bold;
+    padding-top: 1rem;
+}
+p{
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+img{
+    border-radius: 15px 15px 0 0;
+    max-width: 100%;
+}
+.price{
+    display:flex;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 30px;
+}
+.new-price{
+    color: hsl(158, 36%, 37%);
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+
+}
+.old-price{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: medium;
+}
+
+
+button{
+    width: 95%;
+     height: 50px;
+     background-color: hsl(158, 36%, 37%);
+     border-radius: 8px;
+     border: none;
+     font-weight: bold;
+     text-align: center;
+     font-size: 15px;
+     color: hsl(0, 0%, 100%);
+     cursor: pointer;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+}
+button:hover{
+background-color: hsl(158, 58%, 15%);
+}
+
+
+@media (min-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img{
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+        height: 100%;
+    }
+.content-container{
+border-radius: 0 15px 15px 0;
+        margin-top:0;
+        padding: 1.5rem 1.5rem 0;
+}
+}
